@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-//nÎªÊı×é³¤¶È£¬²»ÊÇÏÂ±ê
+//nä¸ºæ•°ç»„é•¿åº¦ï¼Œä¸æ˜¯ä¸‹æ ‡
 int number(int* a, int n, int x)
 {
-	//ÖÕÖ¹Ìõ¼ş£¬Ö»ÓĞÒ»¸öÊı
+	//ç»ˆæ­¢æ¡ä»¶ï¼Œåªæœ‰ä¸€ä¸ªæ•°
 	if (n == 1)
 	{
 		return a[0];
@@ -19,9 +19,9 @@ int number(int* a, int n, int x)
 int main1()
 {
 	int n;
-	cout << "ÊäÈëÊı×é³¤¶È£¨n+1£©£º"<<endl;
+	cout << "è¾“å…¥æ•°ç»„é•¿åº¦ï¼š"<<endl;
 	cin >> n;
-	cout << "ÇëÊäÈëÏµÊı£º" << endl;
+	cout << "è¯·è¾“å…¥ç³»æ•°ï¼š" << endl;
 	int* a = new int[n];
 
 	for (int i = 0;i < n;i++)
