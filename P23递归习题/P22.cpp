@@ -3,10 +3,10 @@ using namespace std;
 
 void change(int& a, int& b);
 
-//index±êÃ÷ÏÖÔÚÅÅµ½µÚ¼¸Î»£¨´Ó0¿ªÊ¼£©£¬nÊÇÊı×ÖÎ»Êı£¬count¼ÆÊıÆ÷£¬¼ÆËãÓĞ¶àÉÙÖÖÇé¿ö
+//indexæ ‡æ˜ç°åœ¨æ’åˆ°ç¬¬å‡ ä½ï¼ˆä»0å¼€å§‹ï¼‰ï¼Œnæ˜¯æ•°å­—ä½æ•°ï¼Œcountè®¡æ•°å™¨ï¼Œè®¡ç®—æœ‰å¤šå°‘ç§æƒ…å†µ
 void sort_and_print(int* a,int index,int n,int& count)
 {
-	//ÅÅµ½×îºóÒ»Î»µÄÊ±ºò
+	//æ’åˆ°æœ€åä¸€ä½çš„æ—¶å€™
 	if (index == n-1)
 	{
 		for (int i = 0;i < n;i++)
@@ -18,7 +18,7 @@ void sort_and_print(int* a,int index,int n,int& count)
 	}
 	else
 	{
-		//Ô­Êı×éÒ²²»ÄÜÊ¡ÂÔ£¬k=index
+		//åŸæ•°ç»„ä¹Ÿä¸èƒ½çœç•¥ï¼Œk=index
 		for (int k = index ;k < n;k++)
 		{
 			change(a[index], a[k]);
@@ -38,10 +38,10 @@ void change(int& a,int&b)
 
 int main()
 {
-	cout << "ÇëÊäÈëÊı×Ö¸öÊı£º";
+	cout << "è¯·è¾“å…¥æ•°å­—ä¸ªæ•°ï¼š";
 	int n;
 	cin >> n;
-	cout << "ÇëÊäÈëÊı×Ö£º";
+	cout << "è¯·è¾“å…¥æ•°å­—ï¼š";
 	int* a = new int[n];
 	for (int i = 0;i < n;i++)
 	{
@@ -50,7 +50,7 @@ int main()
 
 	int count = 0;
 	sort_and_print(a, 0, n, count);
-	cout << "Ò»¹²ÓĞ£º" << count << "ÖÖ\n";
+	cout << "ä¸€å…±æœ‰ï¼š" << count << "ç§\n";
 
 	delete[] a;
 	return 0;
